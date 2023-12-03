@@ -1,0 +1,14 @@
+
+E
+java:S5411%"(Use a primitive boolean expression here.(¢µÁ‰8®àëÚÂ1
+J
+java:S5411&"(Use a primitive boolean expression here.(÷üÅıÿÿÿÿ8‰¡­àÂ1
+7
+java:S1220""Move this file to a named package.8¯àëÚÂ1
+[
+java:S3518)">Make sure "answered" can't be zero before doing this division.(‰äñø8µ¹ı†Ã1
+L	java:S106!"+Replace this use of System.out by a logger.(ş§âÿşÿÿÿÿ8ƒáëÚÂ1
+…
+java:S1157#"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(¥¤ÁÓûÿÿÿÿ8„áëÚÂ1
+L	java:S106&"+Replace this use of System.out by a logger.(÷üÅıÿÿÿÿ8„áëÚÂ1
+G	java:S106)"+Replace this use of System.out by a logger.(‰äñø8…áëÚÂ1

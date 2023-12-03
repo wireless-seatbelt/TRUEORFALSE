@@ -1,0 +1,225 @@
+A mai Windows változatok az NT kernelre épülnek.;I
+A kernel az első program, amit a háttértárról betöltve a processzor futtatni kezd.;H
+A valósidejű rendszer helyes működés esetén mindig egy adott időkorláton belül válaszol az eseményekre.;H
+A fork() Unix rendszerhívás betölt és elindít egy új programot.;H
+Egy taszk futó állapotból futásra kész állapotba csak preemptív ütemezés esetén kerülhet át.;H
+Egy taszk létrehozása utáni első állapota lehet a „fut”.;H
+A várakozási idő a taszk várakozó állapotban eltöltött összes ideje.;H
+A körforgó (RR) ütemező használata optimális átlagos várakozási időt eredményez.;H
+Egy taszk várakozási ideje mindig kisebb, mint a körülfordulási ideje.;I
+A többszintű visszacsatolt sorok (MFQ) ütemező preemptív.;I
+A Unix cron egy középtávú ütemező.;H
+A virtuális és fizikai memóriacímek futásidejű transzformációja alapvetően szoftveres úton működik.;H
+A Windows egyes beágyazott (kevés erőforrással rendelkező) hardverkörnyezetekben is működik.;I
+A mai operációs rendszerek többprocesszoros ütemezési megoldásai jellemzően szimmetrikus rendszerek, azaz minden végrehajtó egység ellátja a saját ütemezését.;I
+A kernel jellemzően akkor szabadít fel egy használatban lévő fizikai memóriakeretet, amikor arra egy új igény teljesítése miatt (az éppen futó taszk) számára szükség van.;H
+A copy-on-write technika lehetővé teszi, hogy két taszk ugyanazt a fizikai memóriát használja.;I
+A FreeBSD egy Linux disztribúció.;H
+NUMA architektúrájú többprocesszoros rendszerben a taszkok nem érik el az összes fizikai memóriát.;H
+A laphibák száma nagyon sok párhuzamosan működő taszk esetén lineárisan függ a multiprogramozás fokától.;H
+A laphibák rendszerszintű gyakorisága a CPU-kihasználtság növekedésével (egy adott mértékig) lineárisan nő.;I
+Egy írásvédett lap írásakor keletkezett megszakítás minden esetben az alkalmazás hibás működésének a következménye.;H
+Az operációs rendszer kernele felügyeli a felhasználói módban futó taszkok működését.;I
+AZ IEEE POSIX egy szabvány, amely előírja a kernel belső felépítését.;H
+A mai operációs rendszer kernelek eseményvezérelt működésűek.;I
+A rendszerhívások jellemzően megszakítással járnak együtt.;I
+Az operációs rendszer elszeparálja (védi) egymástól a taszkokat, ezért azok védett módban futnak.;H
+A Windows nem rendelkezik programozható, karakteres parancsértelmezővel.;H
+A folyamatokon belül csak egy verem lehet.;H
+A π (pi) szám kiszámítása sok számjegyre egy I/O intenzív feladat.;H
+A legrégebben várakozó (FCFS) ütemező preemptív.;H
+A konvoj hatás például a legrövidebb hátralevő löketidejű (SRTF) algoritmussal megszüntethető.;I
+A körülfordulási idő egyenlő a várakozási és futási idők összegével.;I
+Ha növeljük egy rendszerben a fizikai memória méretét, akkor mindig csökkenni fog a laphibák száma, hiszen egyszerre több lapot tarthatunk bent a memóriában.;H
+Két egymástól független taszk azonos virtuális címen általában eltérő adatot lát el, de lehetnek olyan virtuális címeik, amelyeknek azonos programkód található.;I
+Ha egy felhasználói program éppen rendszerhívást hajt végre, a CPU-utasításkészlete akkor is korlátozott marad, hogy ne okozzon gondot a kernelben.;H
+A mai operációs rendszerek monolitikus felépítésűek és modulárisan bővíthetőek.;I
+A szálaknak saját verme van.;I
+Egy taszk várakozási ideje a futásra kész állapotban eltöltött összes ideje.;H
+Egy taszk várakozó állapotból futó állapotba is átkerülhet.;H
+A legrövidebb hátralévő löketidejű (SRTF) ütemező preemptív.;I
+A konvoj hatás például a legrövidebb hátralevő löketidejű (SRTF) algoritmussal kezelhető.;I
+A mai operációs rendszerekben jellemzően többféle ütemezési algoritmus működik egyszerre.;I
+A vergődés a laphibák olyan mértékű gyakorisága, amely a rendszer teljesítményromlásával jár.;I
+A keret- és a laptáblák száma megegyezik.;H
+A laplopó (page daemon) valamilyen lapozási (lapbehozási) stratégiát alkalmaz.;H
+A mai operációs rendszerek a folyamatok memóriatartományát egymástól elszeparálják, hogy azok ne zavarják egymás működését.;I
+Az operációs rendszer alapvető célja a hardver eszközök konfigurációja és menedzselése.;H
+A beágyazott operációs rendszer egy adott feladatra specializált, valósidejű működésű szoftver.;I
+A mikrokernelek elosztott felépítésűek, ahol a kernel feladatait alapvetően egymástól független, felhasználói módban futó taszkok oldják meg.;I
+A UNIX futási szintje meghatározza a rendszerben futó szolgáltatások körét.;I
+Az OS X XNU kernel egy hibrid kernel.;I
+A memória-intenzív feladatok I/O-intenzívvé válhatnak, ha sok memóriára van szükségük.;I
+A körülfordulási idő az állapotátmeneti grágan megtett futásra kész – fut – futásra kész kör teljes ideje.;H
+Egy multiprogramozott operációs rendszer futtatásához több processzormagra van szükség.;H
+A szál egy olyan folyamat, amely más szálakkal közös címtérben fut.;H
+Taszkok adminisztratív adatai a kernel és a taszkok címterében is elhelyezhetők.;I
+Az ütemezés során leghatékonyabban láncolt listák segítségével tarthatjuk nyilván taszkok (pl. prioritás szerint) rendezett halmazát.;H
+A legrégebben várakozó (FCFS) ütemezési algoritmus FIFO adatstruktúrát használ.;I
+A körforgó ütemezés nem kooperatív, és elkerüli a kiéheztetést.;I
+A legrövidebb löketidejű (SJF) algoritmus konstans komplexitású.;H
+A többszintű visszacsatolt sorok ütemező (MFQ) az I/O-intenzív taszkokat magas prioritású szinteken szolgálja ki.;I
+A kernel egyik alapvető feladata a felhasználói módban működő taszkok felügyelete.;I
+Az időosztásos rendszerek egyben multiprogramozottak is.;I
+A FreeRTOS egy valósidejű, beágyazott környezetben használt operációs rendszer.;I
+A valósidejű rendszerek egy eseményre adott időn belül biztosan reagálnak.;H
+Kliens (PC, telefon, tablet) gépeken több Unix-alapú rendszer fut, mint windows alapú.;I
+A rendszerszolgáltatások védett üzemmódban működnek.;H
+A Winlogon előbb fut, mint az SMSS (munkamenet-kezelő) a Windows-on.;H
+A rendszerhívások jellemzően (de nem mindig) megszakítással járnak együtt.;I
+A taszkok minden adminisztratív adatát a kernel címterében tároljuk.;H
+A szál egy olyan taszk megvalósítás, amely egy folyamaton belül más szálakkal közös vermet használ.;H
+Az Apache webszerver szálalapú változata nagyobb teljesítményre (kérés / mp) képes, mint a folyamatalapú.;I
+Az exec() Unix rendszerhívás elindít egy új folyamatot.;H
+A körülfordulási idő egyenlő a várakozási és a futási idő összegével.;I
+A virtuális és fizika memóriacímek futásidejű transzformációja alapvetően szoftveres úton történik.;H
+A laphiba oka jellemzően az alkalmazás hibás viselkedése.;H
+A laphiba kezelése általában taszkok közöj kontextusváltással is jár.;I
+A malloc() rendszerhívás kiadása nem jelenti azt, hogy a kernel memóriakezelője azonnal foglal egy további keretet a taszk számára.;I
+A Unix operációs rendszer első változata az AT&T Bell Lab kommerciális termékeként jelent meg, amelyet számos cég és egyetem vásárolt meg.;H
+A szál egy szekvenciális működésű taszk, amely az OS-ben található többi szállal közös memóriaterületet használ.;H
+A szál egy szekvenciális működésű taszk, amely egy folyamaton belül más szálakkal közös virtuális memóriát használ, de saját verme van.;I
+A szál egy szekvenciális működésű taszk, amely egy folyamaton belül más szálakkal közös halmot (heap-et) használ.;I
+Az ütemező átbocsájtó képessége a taszkok által időegység alatt átvitt adatok mennyisége.;H
+Az MFQ ütemező az I/O intenzív taszkokat magasabb prioritási szinten tartja, mint a CPU-intenzíveket.;I
+A Linux felhasználói módban többszintű ütemezőt használ.;I
+A laphibát az MMU jelzi, és a kernel kezeli.;I
+A malloc() rendszerhívás azonnal lefoglalja a taszk által igényelt teljes memóriamennyiséget.;H
+A laphiba azt jelenti, hogy az adott lap nem létezik sehol, ezért nem lehet rá hivatkozni.;H
+A Unix Wayland egy kompozíciós kijelzőszerver protokoll.;I
+Két folyamat azonos virtuális címen általában eltérő adatot lát, de lehetnek olyan virtuális címeik, amelyeken azonos programkód található.;I
+A statikus többszintű ütemezőkben nem jelentkezhet a kiéheztetés, hiszen a globális ütemező preemptív.;H
+A válaszidő azt fejezi ki, hogy a felhasználónak mennyit kellett várnia egy program első válaszára (kimenetére) annak elindításától számítva.;H
+A beágyazott operációs rendszer egy adott feladatra specializált, valósidejű működésű szoftver.;I
+A közös erőforrások használatakor kialakuló versenyhelyzeteket szinkronizációs eszközökkel kezelhetjük.;I
+RR használata optimális átlagos várakozási időt eredményez.;H
+Egy általános célú operációs rendszerben jellemzően 1-2 kontextusváltás történik másodpercenként.;H
+A valósidejű rendszerek helyes működés esetén mindig adott határidőn belül válaszolnak az eseményekre;H
+A rendszerkönyvtárak az operációs rendszer védett módban működő részei.;H
+Az MFQ ütemező lefelé lépteti a taszkokat a szintek között, ha azok az adott szinten kihasználják a rendelkezésükre álló CPU-időt (RR időszeletet).;I
+A spinlock kis rezsiköltséggel rendelkező zárolási eszköz, ezért minden esetben javasolt a használata, amikor az operációs rendszer azt támogatja.;H
+A valósidejű rendszer mindig egy adott időkorláton belül válaszol az eseményekre.;H
+Olyan rendszerben, ahol nem alakulhat ki versenyhelyzet, nincs szükség szinkronizációra.;H
+A körülforgó (RR) ütemezés esetén a konvoj-hatás nem jelentkezik, mivel az ütemező a taszkokat csak adott ideig futtatja, utána átütemezéssel megszakítja a futásukat.;I
+Körforgó ütemezés során egy taszk csak akkor lép ki a futó állapotából, ha lejárt az időszelete.;H
+A szinkronizáció megvalóstása szükségképpen maga után vonja a taszkok várakozást.;H
+A dinamikus többszintű ütemező átrendezheti a szintek között a taszkokat, míg a statikus nem.;I
+A konvoj hatás kooperatív ütemező algoritmussal nem kezelhető. – (Egyes esetekben kezelhető, másokban nem);H
+A UNIX exec() rendszerhívás betölt és elindít egy új folyamatot.;H
+Egy rendszer absztrakt virtuális gépei összességükben több erőforrást tartalmaznak, mint amennyi fizikailag rendelkezésre áll.;I
+A laphibák számát biztosan csökkentjük, ha növeljük a rendelkezésre álló fizikai memória méretét.;H
+A körülfordulási idő egyenlő a várakozási és a futási idők összegével.;I
+Az óra és az újabb esély lapcsere ugyanazon múltbéli adatokra támaszkodva működik.;I
+A futási szint (runlevel) meghatározza a UNIX rendszerekben futó taszkok prioritását.;H
+A többszintű visszacsatolt sorok (MFQ) ütemező lefelé lépteti a taszkokat a szintek között, ha azok az adott szinten kihasználják a rendelkezésükre álló CPU-időt (pl. a RR időszeletet).;I
+Minden rendszerhívás védett módban hajtódik végre.;H
+A szinkronizáció általában rontja a programjaink teljesítményét.;I
+A taszkok adminisztratív adatait a kernel a saját címtartományában tárolja.;H
+Nem preemptív ütemező esetén egy taszk kizárólag önszántából veszítheti el a CPU-t.;H
+Spinlock (spinning lock) TSL (Test-end-set) művelet segítségével megvalósítható.;I
+A kiéheztetés statikus prioritást alkalmazó prioritásos ütemezőkben nem kerülhető el.;I
+A válaszidő mindig kisebb, mint a körülfordulási idő.;I
+A PRAM modell nem engedi meg a közös memória konkurens írását két (vagy több) taszk által, ezért ilyen esetekben is garantálja a programok helyes működését.;H
+Heterogén, többprocesszoros ütemezésben a taszkok jellemzően nem migrálhatók szabadon a végrehajtó egységek között.;H
+A mai OS-ek többprocesszoros ütemezési megoldásai jellemzően szimmetrikus rendszerek, azaz minden végrehajtó egység ellátja a saját ütemezését.;I
+RR-ben a taszkok mindig addig vannak F állapotban, amíg le nem jár az időszeletük.;H
+A holtpont elleni védekezés legjobb módja a strucc algoritmus.;H
+A UNIX jelzések a kommunikáció leggyorsabb formái közé tartoznak nagyon alacsony késleltetésük miatt.;H
+A spinlock kis rezsiköltséggel rendelkező zárolási eszköz, ezért minden esetben javasolt a használata, amikor az operációs rendszer azt támogatja.;H
+A távoli eljáráshívás megvalósítása csak egy folyamaton belüli szálak között lehetséges, mivel azok férnek hozzá egymás memóriaterületéhez és eljáráshoz.;H
+Két, egy folyamaton belüli szál azonos virtuális címen jellemzően ugyanazt látja, de van a virtuális címtartományuknak olyan része, amely biztosan különböző adatokat tartalmaz.;I
+A kemény valósidejű rendszer helyes működése esetén mindig egy adott időkorláton belül válaszol az eseményekre.;I
+A hálózati kommunikáció (socket) egy indirekt, üzenetküldésen alapuló megoldás.;H
+A várakozási idő a taszk FK állapotában eltöltött ideje.;H
+A mutex többpéldányos erőforrások védelmére alkalmas szinkronizációs eszköz.;H
+Kliens (PC, telefon, tablet) gépeken több Unix-alapú rendszer fut, mint Windows-alapú.;I
+Az ütemező átbocsájtó képessége az egységnyi időszelet alatt átütemezett taszkok száma.;H
+A beágyazott operációs rendszerek minden esetben determinisztikus működésűek.;H
+A körülfordulási idő az állapotátmeneti grágan megtett FK – F – FK kör teljes ideje.;H
+Egy operációs rendszer nem lehet egyszerre monolitikus és moduláris felépítésű.;H
+Az időosztásos operációs rendszerek egyben multiprogramozott rendszerek is.;I
+Az SRTF preemptív.;I
+Ha egy rendszerben kialakulhat holtpont, akkkor az az erőforrás-foglalások tetszőleges sorrendje esetén ki fog alakulni.;H
+Az ablakkezelő (window manager) a karakteres parancsértelmező (shell) grafikus változata.;H
+Olyan rendszerben is szükség lehet szinkronizációra, ahol nem alakulhat ki versenyhelyzet.;I
+A hálózati kommunikáció (socket) egy asszimetrikus kommunikációs forma.;I
+Két egymástól független taszk azonos virtuális címen általában eltérő adatot lát, de lehetnek olyan virtuális címeik, amelyeken azonos programkód található.;I
+Egy operációs rendszer forráskódja lehet néhány tízezer programsor, de akár sok millió is.;I
+A szál a taszk egy olyan megvalósítása, amely önálló memóriaterülettel rendelkezik.;H
+Az üzenetváltásos kommunikáció során mindig szükséges az átvitt adatok átmeneti tárolása.;H
+Egy mikrokernel alapvetően elosztott rendszer felépítésű.;I
+A memóriakezelés során fellépő védelmi hiba hardver megszakítást okoz.;H
+SJF esetén az FK-vá vált taszk beillesztésének művelete O(I) konstans komplexitású.;H
+A Windows 10 OS telefonon is működik.;I
+Egy felhasználói feladatot egy taszk old meg.;H
+A multiprogramozott OS nevét onnan kapta, hogy egyszerre több programozási nyelven is programozható.;H
+Ha egy memória-intenzív taszkokat futtató rendszerben alacsony a CPU-kihasználtság, akkor nincs elegendő memória a taszkok számára.;I
+A kernel moduláris felépítése csökkenti a kernel futásidejű memóriafoglalását.;I
+A szinkronizáció a taszkok működésének összehangolása a művelet-végrehajtás időbeli korlátozásával.;I
+Ha növeljük egy rendszerben a fizikai memória méretét, akkor mindig csökkenni fog a laphibák száma, hiszen hiszen több lapot tarthatunk bent a memóriában.;H
+Egy nem terhelt OS percenként legfeljebb néhány kontextusváltás történik, hiszen csak 1-2 taszk működik.;H
+A UNIX egy időosztásos, multiprogramozott OS.;I
+Az SRTF végrehajthat F->FK állapotátmenetet egy taszkon, míg például az FCFS nem. F->V állapotátmenetet egyetlen ütemező sem hajt végre taszkon.;I
+A PRAM modell nem biztosít kölcsönös kizárást a közösen használt memóriaterületre.;H
+Kooperatív ütemező esetén a taszkok nem hajtanak végre F->FK állapotátmenetet.;H
+Az ütemező a várakozó állapotú taszkok közül választja ki a következő futó taszkot.;H
+A beágyazott OS-ek jellemzően előre meghatározott feladatok ellátását támogatják.;I
+A zombi állapot célja megvárni, hogy a szülő folyamat nyugtázza a gyerek leállását.;I
+Az üzenetsor egy indirekt kommunikációs megoldás.;I
+A CPU nem tudja végrehajtani a programok cserehelyen (swap) levő utasításait.;I
+A statikus többszintű ütemezőkben nem jelentkezhet a konvoj-hatás, hiszen a globális ütemező preemptív.;H
+PRAM modell szerinti kommunikáció csak egy folyamaton belüli szálak között valósítható meg a mai operációs rendszerekben.;H
+SJF adatműveletei konstans komplexításúak.;H
+A kernel átütemezési pontok alkalmazása javítja a válaszidőt, mivel védett módban is teljesen preemptívvé válik az OS működése.;H
+Egy feladatot mindig egy taszk old meg.;H
+Egy többszintű ütemező akkor is lehet preemptív, ha minden szinten kooperatív ütemezési algoritmust használ.;I
+Optimista zárolás alkalmazásával minden esetben javítható a programunk teljesítménye.;H
+Ha egy rendszerben csak I/O-intenzív taszkok vannak, akkor az FCFS alkalmazása során nem léphet fel konvoj hatás.;I
+A folyamatnak saját memóriatartománya, a szálnak pedig saját verme van.;I
+A taszkok állapotváltozásai alapvetően megszakítások miatt következnek be.;I
+Az MFQ ütemező preemptív.;I
+Az ideális ütemező komplexitása lineáris, azaz O(N).;H
+A mai operációs rendszerekben jellemzően többféle ütemező működik egyszerre.;I
+A strucc-algoritmus a holtpont "kezelésének" egyik módja, amely nem vesz tudomást a holtpont kialakulásáról, így valójában nem is kezeli azt.;I
+Az FCFS ütemező konstans algoritmikus komplexitású.;I
+A memória-intenzív taszkok nagy memóriafoglalás esetén CPU-intenzívvé válnak.;H
+Minden valósidejű rendszer mindig adott időkereten belül válaszol a bemenetre.;H
+A dinamikus többszintű ütemezőben van upgrade, míg a statikus ütemezőben nincs.;I
+A RAID0 általában gyorsabb a RAID1-nél, de a RAID1 megbízhatóbb.;I
+A mikrokernelek elosztott felépítésűek, ahol a kernel feladatait alapvetően egymástól független, felhasználói módban futó taszkok oldják meg.;I
+A cserehely (swap) a taszkok teljes memóriaképét tárolja.;H
+A modern mikrokernelek (pl. L4) fő gyengesége a lassú üzenetalapú kommunikáció.;H
+Az rpcgen egy kódgenerátor, amely RPC interfészleírásból bináris programkódot készít.;H
+Egy rendszerhívás meghívása jellemzően szoftveres megszakítást von maga után.;I
+F állapotból FK állapotba csak preemptív ütemezés esetén válthatnak a taszkok.;H
+Aszinkron üzenetváltásos kommunikáció során a küldés művelet befejezése megelőzi fogadás művelet elindítását.;H
+A vergődés során a rendszer teljesítménye a gyakori laphibák miatt megnövekedő I/O-terhelés hatására romlik jelentősen.;I
+A mai OS-ek jellemzően preemptív ütemezőt használnak.;I
+A Windows Task Scheduler egy hosszútávú ütemező.;I
+A PRAM (pipelined RAM) modell írás-olvasás ütközésnél mindig először az írás műveletet hajtja végre, hogy az olvasás már az új értékkel térhessen vissza.;H
+A laphiba gyakorisága a CPU-kihasználtsággal lineárisan nő.;H
+A számítógépeken futó taszkok többsége I/O-intenzív.;I
+A taszkok minden adminisztratív adatát a kernel címterében helyezik el.;H
+Többprocesszoros ütemezésben a taszkokat nem célszerű szabadon migrálni a végrehajtó egységek között.;I
+A taszkok adminisztratív adatait védelmi okokból mindig a kernel címterében tároljuk.;H
+A "lapok tárba fagyasztása" (page locking) technikai célja írásvédetté tenni a lap tartalmát.;H
+Az OS kernelek minden része/eljárása védett módban van.;H
+Az időosztásos operációs rendszer alkalmazása csökkenti a rendszer válaszidejét a klasszikus multiprogramozott rendszerekhez képest.;I
+A programokban mindenféle jelzésre szabadon beállíthatunk jelzéskezelő eljárásokat.;H
+Egy taszk F állapotból FK állapotba csak preemptív ütemezés esetén kerülhet át.;H
+Egy hibás memóriacímzési művelet laphibát eredményez.;H
+A cserehely (swap) célja, hogy bővítse a fizikai memóriát.;I
+A CPU a cserehelyen (swap) lévő adatokhoz közvetlenül nem fér hozzá.;I
+A laphiba kezelése sok esetben taszkok közötti átütemezéssel is jár.;I
+A cserehely a fizikai memória egy elszeparált része, ahol a nem futó taszkok adatait tároljuk.;H
+A mai operációs rendszerek általában nem alkalmaznak előretekintő lapozást, mivel jellemzően nincs arról információjuk, hogy a jövőben milyen lapokra lesz szükség.;I
+Egy statikus többszintű ütemező kimeneti szintválasztó algoritmusa lehet körforgó (RR) ütemező, ha azt az adott alkalmazási környezet megkívánja.;I
+Szerver platormon a Linux operációs rendszer részesedése 10% alaj.;H
+Ha egy felhasználói program kernel módba vált (pl. rendszerhívással), a CPU- utasításkészlete akkor is korlátozott marad, hogy ne okozzon gondot a kernelben.;H
+Egy operációs rendszerben nem lehet több működő taszk, mint ahány végrehajtó egység van.;H
+AZ SJF ütemező képes kezelni a konvoj hatást, de nem a kiéhezést.;I
+A vergődés az a jelenség, amikor a keretek számának növelése a laphibák számát is növeli.;H
+A Microsoft RDP egy elterjedt kijelzőszerver protokoll.;I
+A processzoraffinitás leginkább azért fontos kérdés, mivel többprocesszoros rendszerekben a végrehajtók utasításkészlet-architektúráját (ISA) figyelembe kell vennie az ütemezőnek.;H
+A rendszer túlterhelése esetén jelentkező vergődés rövidtávú ütemezéssel kezelhető.;H
+A taszkok löketidejét a gyakorlatban működő ütemezők előre ismerik.;H
