@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -27,6 +28,7 @@ public class Main {
         Random rnd = new Random();
         double point = 0;
         int answered = 0;
+        DecimalFormat df = new DecimalFormat("#.##");
         while (answered < 15) {
             int randomindex = rnd.nextInt(0, questionList.size());
             Question current = questionList.remove(randomindex);
@@ -35,9 +37,9 @@ public class Main {
             boolean ans = line.toLowerCase().equals("i");
             answered++;
             point += ans == current.answer ? 1 : -0.5;
-            System.out.println((ans == current.answer ? "Helyes" : ("Helytelen. A helyes válasz: " + current.toString())) + "\tPontok: " + point + " - Százalék: " + (point/answered)*100 + "%\n");
+            System.out.println((ans == current.answer ? "Helyes" : ("Helytelen. A helyes válasz: " + current.toString())) + "\tPontok: " + point + " - Százalék: " + df.format((point/answered)*100) + "%\n");
         }
         sc.close();
-        System.out.println("Pontok: " + point + "\nSzázalékos eredmény: " + (point/answered) * 100);
+        System.out.println("Pontok: " + point + "\nSzázalékos eredmény: " + df.format((point/answered) * 100) + "%");
     }
 }
